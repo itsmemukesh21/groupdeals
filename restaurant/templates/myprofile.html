@@ -1,0 +1,404 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  <section class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-10 col-xs-12">
+          <div class="main">
+            {% for products in product %}
+           <div class=" column main-top-section-product">
+            <div class="col-md-4 col-xs-12 ">
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-one.html">
+                    <div class="image-section">
+                      <img src="images/product/1.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                    </div>
+                  </a>
+                    <div class="main-title-paymnt-heading">
+                  <a href="">
+                    <h2>{{ products.title }}</h2>
+                  </a>
+                  <h3>{{ products.price }}$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">{{ products.minimum_deposit }}$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-two.html">
+                    <div class="image-section">
+                      <img src="images/product/4.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                      <div class="plus-share-section">
+                        <a href="#"><span>+</span> Share</a>
+                        <div class="hover-icon-section">
+                          <a href="#"><span>-</span><span class="twitter"> <img src="images/product/Twitter.png"></span><span class="pintrest"> <img src="images/product/Pinterest.png"></span><span class="linked"><img src="images/product/linkedin.png"></span><span class="gugl-pls"><img src="images/product/google.png"></span><span class="viber"><img src="images/product/vkontakte.png"></span><span class="vimeo"><img src="images/product/Facebook.png"></span><span class="king"><img src="images/product/ok.png"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                    <div class="main-title-paymnt-heading">
+                  <a href="product-two.html">
+                    <h2>title</h2>
+                  </a>
+                  <h3>600$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-three.html">
+                    <div class="image-section">
+                      <img src="images/product/7.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                      <div class="plus-share-section">
+                        <a href="#"><span>+</span> Share</a>
+                        <div class="hover-icon-section">
+                          <a href="#"><span>-</span><span class="twitter"> <img src="images/product/Twitter.png"></span><span class="pintrest"> <img src="images/product/Pinterest.png"></span><span class="linked"><img src="images/product/linkedin.png"></span><span class="gugl-pls"><img src="images/product/google.png"></span><span class="viber"><img src="images/product/vkontakte.png"></span><span class="vimeo"><img src="images/product/Facebook.png"></span><span class="king"><img src="images/product/ok.png"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                     <div class="main-title-paymnt-heading">
+                  <a href="product-three.html">
+                    <h2>title</h2>
+                  </a>
+                  <h3>600$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- main-top-section-product -->
+
+            <div class="col-md-4 col-xs-12 ">
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-four.html">
+                    <div class="image-section">
+                      <img src="images/product/2.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                      <div class="plus-share-section">
+                        <a href="#"><span>+</span> Share</a>
+                        <div class="hover-icon-section">
+                          <a href="#"><span>-</span><span class="twitter"> <img src="images/product/Twitter.png"></span><span class="pintrest"> <img src="images/product/Pinterest.png"></span><span class="linked"><img src="images/product/linkedin.png"></span><span class="gugl-pls"><img src="images/product/google.png"></span><span class="viber"><img src="images/product/vkontakte.png"></span><span class="vimeo"><img src="images/product/Facebook.png"></span><span class="king"><img src="images/product/ok.png"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                    <div class="main-title-paymnt-heading">
+                  <a href="product-four.html">
+                    <h2>title</h2>
+                  </a>
+                  <h3>600$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-five.html">
+                    <div class="image-section">
+                      <img src="images/product/5.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                      <div class="plus-share-section">
+                        <a href="#"><span>+</span> Share</a>
+                        <div class="hover-icon-section">
+                          <a href="#"><span>-</span><span class="twitter"> <img src="images/product/Twitter.png"></span><span class="pintrest"> <img src="images/product/Pinterest.png"></span><span class="linked"><img src="images/product/linkedin.png"></span><span class="gugl-pls"><img src="images/product/google.png"></span><span class="viber"><img src="images/product/vkontakte.png"></span><span class="vimeo"><img src="images/product/Facebook.png"></span><span class="king"><img src="images/product/ok.png"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                     <div class="main-title-paymnt-heading">
+                  <a href="product-four.html">
+                    <h2>title</h2>
+                  </a>
+                  <h3>600$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-six.html">
+                    <div class="image-section">
+                      <img src="images/product/6.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                      <div class="plus-share-section">
+                        <a href="#"><span>+</span> Share</a>
+
+                        <div class="hover-icon-section">
+                          <a href="#"><span>-</span><span class="twitter"> <img src="images/product/Twitter.png"></span><span class="pintrest"> <img src="images/product/Pinterest.png"></span><span class="linked"><img src="images/product/linkedin.png"></span><span class="gugl-pls"><img src="images/product/google.png"></span><span class="viber"><img src="images/product/vkontakte.png"></span><span class="vimeo"><img src="images/product/Facebook.png"></span><span class="king"><img src="images/product/ok.png"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                     <div class="main-title-paymnt-heading">
+                  <a href="product-five.html">
+                    <h2>title</h2>
+                  </a>
+                  <h3>600$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- main-top-section-product -->
+
+            <div class="col-md-4 col-xs-12 ">
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-seven.html">
+                    <div class="image-section">
+                      <img src="images/product/7.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                      <div class="plus-share-section">
+                        <a href="#"><span>+</span> Share</a>
+                        <div class="hover-icon-section">
+                          <a href="#"><span>-</span><span class="twitter"> <img src="images/product/Twitter.png"></span><span class="pintrest"> <img src="images/product/Pinterest.png"></span><span class="linked"><img src="images/product/linkedin.png"></span><span class="gugl-pls"><img src="images/product/google.png"></span><span class="viber"><img src="images/product/vkontakte.png"></span><span class="vimeo"><img src="images/product/Facebook.png"></span><span class="king"><img src="images/product/ok.png"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                    <div class="main-title-paymnt-heading">
+                  <a href="product-six.html">
+                    <h2>title</h2>
+                  </a>
+                  <h3>600$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-eight.html">
+                    <div class="image-section">
+                      <img src="images/product/8.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                      <div class="plus-share-section">
+                        <a href="#"><span>+</span> Share</a>
+                        <div class="hover-icon-section">
+                          <a href="#"><span>-</span><span class="twitter"> <img src="images/product/Twitter.png"></span><span class="pintrest"> <img src="images/product/Pinterest.png"></span><span class="linked"><img src="images/product/linkedin.png"></span><span class="gugl-pls"><img src="images/product/google.png"></span><span class="viber"><img src="images/product/vkontakte.png"></span><span class="vimeo"><img src="images/product/Facebook.png"></span><span class="king"><img src="images/product/ok.png"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                <div class="main-title-paymnt-heading">
+                  <a href="#">
+                    <h2>title</h2>
+                  </a>
+                  <h3>600$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-product-sec wow fadeIn animated">
+                <div class="main_sub_product">
+                  <a href="product-nine.html">
+                    <div class="image-section">
+                      <img src="images/product/9.jpg">
+                      <div class="hover-image">
+                        <img src="images/product/icon.png">
+                      </div>
+                      <div class="plus-share-section">
+                        <a href="#"><span>+</span> Share</a>
+
+                        <div class="hover-icon-section">
+                          <a href="#"><span>-</span><span class="twitter"> <img src="images/product/Twitter.png"></span><span class="pintrest"> <img src="images/product/Pinterest.png"></span><span class="linked"><img src="images/product/linkedin.png"></span><span class="gugl-pls"><img src="images/product/google.png"></span><span class="viber"><img src="images/product/vkontakte.png"></span><span class="vimeo"><img src="images/product/Facebook.png"></span><span class="king"><img src="images/product/ok.png"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                     <div class="main-title-paymnt-heading">
+                  <a href="#">
+                    <h2>title</h2>
+                  </a>
+                  <h3>600$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                      <h2>Deposit <span class="money-deposit">10$</span></h2>
+                    </div>
+                    <div class="payment-sub-section-two">
+                      <a href="#">Pay Now</a>    
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    <div class="payment-day-one">
+                      <h2>2 days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- main-top-section-product -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button").click(function(){
+       $("body").toggleClass("highlight", 5000);
+           });
+
+});
+</script>
+
+ <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        }
+    );
+    </script>
+  {% endblock %}

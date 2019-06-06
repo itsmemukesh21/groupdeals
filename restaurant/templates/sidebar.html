@@ -1,0 +1,30 @@
+{% load static %}
+<section class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2 col-xs-12" >
+          <div class="sidenav wow fadeInLeft animated new">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="logo">
+              <a href="#">
+                <img src="{% static 'images/logo-light.png' %}" alt="">
+              </a>
+            </div>
+            <button type="button" class="navbar-toggler toggle-one" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+           </button>
+            <div class="collapse navbar-collapse main-change" id="navbarCollapse">
+            <ul class="navbar-nav left-side-bar">   
+              <li><a href="{% url 'Homepage' %}">Homepage</a></li>
+              <li><a href="{% url 'login' %}">Login</a> | <a href="{% url 'signup' %}">SignUp</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+          </div>
+        </div>
