@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <div class="col-sm-10 col-xs-12 product-single">
+          <div class="main">
+            {% for products in product %}
+           <div class=" column main-top-section-product">
+            <div class="col-sm-10 col-xs-12 ">
+              <div class="main-product-sec">
+                <div class="main_sub_product">
+                  <a href="product-one.html">
+                  <div class="image-section">
+                    <img src="{{ products.main_image.url }}">
+                    <div class="hover-image">
+                      <img src="{% static 'images/product/icon.png' %}">
+                    </div>
+                    
+                  </div>
+                </a>
+                 <div class="main-title-paymnt-heading">
+                  <a href="#">
+                    <h2>{{ products.title }}</h2>
+                  </a>
+                  <h3>{{ products.price }}$</h3>
+              </div>
+                  <div class="payment-sub-section">
+                    <div class="payment-sub-section-one">
+                       <h2>Deposit <span class="money-deposit">{{ products.minimum_deposit }}$</span></h2>
+                    </div>
+                    <div class=""  style="display: style;">
+                      <form action=" " method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="productid" value="{{ products.id }}">
+                        <a><script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                         data-key="{{ key }}"
+                         data-description="{{ products.title }}"
+                         data-amount=amount
+                         data-locale="auto"
+                         >
+                     </script></a>   
+                     </form> 
+                    </div>
+                  </div>
+                  <div class="payment-sub-days">
+                    
+                    <div class="payment-day-one">
+                      <h2>{{ diff }} days left</h2>
+                    </div>
+                    <div class="payment-day-two">
+                      <h2>10 person already purchased</h2>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <p>{{ products.description }}</p>
+                  </div>
+                   <div class="main-delivrd-section-sub">
+                  <h2>Fulfilled By: </h2>
+                  <h5>{{ products.fullfilled_by }}</h5>
+                </div>
+                </div>
+              </div>
+            </div>
+             <div class="col-sm-2 col-xs-12 main-prodct-left">
+              <div class="main-product-left-sec">
+              <img src="{{ products.product_image1.url }}">
+            </div>
+             <div class="main-product-left-sec">
+               <img src="{{ products.product_image2.url }}"> 
+            </div>
+             <div class="main-product-left-sec">
+               <img src="{{ products.product_image3.url }}"> 
+            </div>
+            </div>
+          </div>
+          <!-- main-top-section-product -->
+          {% endfor %}
+        </div>
+     
+    </div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button").click(function(){
+       $("body").toggleClass("highlight", 5000);
+           });
+
+});
+</script>
+
+
+ <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        }
+    );
+    </script>
+
+
+<script type="text/javascript">
+  $(".stripe-button-el").click(function(){
+    alert("-----------------dssads------------------");
+    var p_id = $(this).attr('id');
+    alert(p_id);
+    });
+</script>
+
+{% endblock %}
